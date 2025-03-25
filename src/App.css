@@ -1,0 +1,53 @@
+:root {
+  --text-primary: #000000;
+  --text-secondary: #b0b0b0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.todo-container {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 50px auto;
+  width: 400px;
+  height: 400px;
+  padding: 8px 24px;
+  box-shadow: 0px 8px 8px 4px rgb(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* border: 1px solid black; */
+}
+
+.header-icon {
+  font-size: 24px;
+}
+
+.todo-description {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.add-task-section {
+  margin-top: 16px;
+ display: flex;
+ justify-content: space-between;
+ gap: 8px;
+}
+
+.add-task-section input {
+  width: 100%;
+}
+
+.add-task-button {
+  font-size: 32px;
+  padding: 4px;
+  border-radius: 6px;
+  background-color: black;
+}
