@@ -98,6 +98,7 @@
 .tasks {
   min-height: 200px;
   list-style-type: none;
+  margin-top: 8px;
 }
 
 .task {
@@ -113,6 +114,10 @@
 
 .task input {
   margin-right: 8px;
+}
+
+.crossed {
+  text-decoration: line-through;
 }
 
 .footer {
