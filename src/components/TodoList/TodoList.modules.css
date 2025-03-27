@@ -1,0 +1,136 @@
+:root {
+    --text-primary: #000000;
+    --text-secondary: #b0b0b0;
+    --background-light-gray: #eeeeee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 1vh;
+}
+
+/* */
+
+.mt {
+    margin-top: 16px;
+}
+
+/* */
+
+.todo--container {
+    margin: 50px auto;
+    width: 400px;
+    min-height: 400px;
+    padding: 16px 24px;
+    box-shadow: 0px 8px 8px 4px rgb(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.todo--header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* border: 1px solid black; */
+}
+
+.todo--header-icon {
+    font-size: 1.5rem;
+}
+
+.todo--description {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.add-task-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.add-task-section input {
+    width: 100%;
+    padding-left: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(161, 161, 161, 0.8);
+}
+
+.add-task-button {
+    font-size: 32px;
+    padding: 4px;
+    border-radius: 6px;
+    background-color: black;
+    height: 36px;
+    width: 36px;
+}
+
+.add-task-button:hover {
+    cursor: pointer;
+}
+
+.todo-status {
+    list-style-type: none;
+    display: flex;
+    background-color: var(--background-light-gray);
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.todo-status:hover {
+    cursor: pointer;
+}
+
+.todo-status li {
+    width: 33%;
+    text-align: center;
+    padding: 4px 0px;
+    border-radius: 6px;
+}
+
+.todo-status-selected {
+    background-color: white;
+}
+
+.tasks {
+    min-height: 200px;
+    list-style-type: none;
+    margin-top: 8px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(161, 161, 161, 0.5);
+    border-radius: 4px;
+    height: 24px;
+    padding: 16px;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.task input {
+    margin-right: 8px;
+}
+
+.crossed {
+    text-decoration: line-through;
+}
+
+.todo--footer {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo--footer div {
+    display: flex;
+    gap: 4px;
+}

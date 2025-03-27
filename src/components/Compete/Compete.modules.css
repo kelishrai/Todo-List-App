@@ -1,0 +1,219 @@
+.compete {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "main aside";
+    padding-left: 25rem;
+    padding-right: 25rem;
+    background-color: #f8fafd;
+    gap: 2rem;
+}
+
+.compete__main {
+    grid-area: "main";
+}
+
+.compete__banner {
+    display: flex;
+    margin-top: 3rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.compete__banner__logo {
+    background-color: #0556f3;
+    padding: 4px;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+}
+
+.compete__banner p {
+    color: var(--heading-primary);
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.compete__banner button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+.start-challenge-section {
+    border: 1px solid var(--border-color);
+    background-color: #fff6ef;
+    display: flex;
+    align-items: center;
+    padding: 1.4rem 1.2rem;
+    border-radius: 0.5rem;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.start-challenge-section div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.7rem;
+}
+
+.start-challenge-section div p:first-child {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.start-challenge-section div p:last-child {
+    color: #25265eab;
+    font-weight: 600;
+}
+
+.start-challenge-section button {
+    background-color: #6501e5;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.challenge {}
+
+.challenge__filter {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #25265e;
+}
+
+.challenge__filter__button {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.challenge-list {
+    height: 300px;
+    width: 100%;
+    margin-top: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+}
+
+/* TODO: shift below CSS to ChallengeListTable's CSS file */
+
+.challenge-list-table {
+    border-top: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    width: 100%;
+    text-align: left;
+    border-radius: 0.4rem;
+    margin-top: 2rem;
+}
+
+.challenge-list-table__row {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-areas: "first-column second-column third-column";
+    padding: 0.6rem;
+    color: #25265e;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.challenge-list-table__row--header {
+    background-color: #f8f7fc;
+}
+
+.challenge-list-table__row--data {
+    background-color: white;
+}
+
+.challenge-list-table__first-column {
+    grid-area: "first-column";
+}
+
+.challenge-list-table__second-column {
+    grid-area: "second-column";
+}
+
+.challenge-list-table__third-column {
+    grid-area: "third-column";
+}
+
+.challenge-difficulty {
+    border: 1px solid;
+    border-radius: 0.7rem;
+    display: inline;
+    padding: 0.3rem;
+    font-size: 0.8rem;
+}
+
+/* */
+
+.compete__aside {
+    grid-area: "aside";
+    padding-top: 6.5rem;
+}
+
+.compete__aside__stats {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.compete__aside__stats__stat {
+    display: flex;
+    flex-direction: row;
+    padding: 0.8rem 1rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.compete__aside__stats__stat--green {
+    background-color: #e7ffef;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.compete__aside__stats__stat--pink {
+    background-color: #fff5e7;
+}
+
+.compete__aside__stats_icon {
+    font-size: 2rem;
+}
+
+.compete__aside__stats__stat>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.compete__aside__stats>div>div>p:first-child {
+    font-size: 1.4rem;
+    color: #25265ede;
+    font-weight: 600;
+}
+
+.compete__aside__stats>div>div>p:last-child {
+    font-size: 0.9rem;
+    color: #25265eab;
+    font-weight: 600;
+}
+
+.compete-leaderboard {
+    height: 300px;
+    width: 100%;
+    margin-top: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+}
